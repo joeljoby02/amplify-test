@@ -5,7 +5,7 @@ function App() {
 
   useEffect(() => {
     // Replace this with your EC2 public IP or domain
-    fetchfetch("http://3.148.162.26/api/hello")
+    fetch("http://3.148.162.26/api/hello")
       .then(res => res.json())
       .then(data => setMessage(data.message))
       .catch(err => {
